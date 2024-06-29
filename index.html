@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TiendaOnlineMultiSport</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      color: greenyellow;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    h5 {
+      color: greenyellow;
+    }
+    .bg-image {
+      background-image: url('https://cdn.pixabay.com/photo/2023/04/17/10/31/tennis-7932066_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100vw;
+      margin-top: -60px;
+    }
+    .carousel-inner img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .carousel-item .col {
+      padding: 0 10px;
+    }
+    .carousel-item .card {
+      margin: auto;
+      width: 100%;
+    }
+    /* Footer */
+    footer {
+      background-color: #f5f5f5; /* Cambiar al color de fondo deseado */
+      color: white;
+      padding: 60px 0;
+    }
+    footer a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="mb-5">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://ii.ct-stc.com/1/logos/empresas/2018/08/08/0bce8fdafcfe4fffb36a210038530thumbnail.png" alt="Logo" style="height: 30px; width: 30px;"> 
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tienda">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+
+    <div class="bg-image"> 
+      <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="text-dark text-center">
+          <h1 class="mb-3" style="color: greenyellow;">"Bienvenidos a MultiSports"</h1>
+          <h5 class="mb-4" style="color: greenyellow;">Tu destino definitivo para todo lo relacionado con el deporte. Aquí encontrarás el equipo perfecto, la ropa más cómoda y el asesoramiento experto para llevar tu rendimiento al siguiente nivel. ¡Vamos juntos hacia la victoria!</h5>
+          <a class="btn btn-primary" href="#productos" role="button">Explorar productos</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="proposito" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="mb-4" style="color: greenyellow;">Nuestro Propósito</h2>
+          <p class="lead" style="color: black;">
+            En MultiSports, nos dedicamos a inspirar y equipar a los entusiastas del deporte para alcanzar sus metas personales y competitivas. Ofrecemos una amplia gama de productos de alta calidad, desde indumentaria deportiva hasta equipos especializados, respaldados por el compromiso con el servicio al cliente y el conocimiento experto. Ya sea que seas un atleta profesional o simplemente disfrutes del fitness, estamos aquí para ayudarte a superar tus límites y disfrutar al máximo tu experiencia deportiva.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" style="color: greenyellow;">Nuestros Productos</h2>
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-12 col-lg-4">
+                <div class="card">
+                  <img src="producto1.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: greenyellow;">Zapatillas Zoomx Invincible Run Flyknit</h5>
+                    <p class="card-text" style="color: greenyellow;">$100</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <div class="card">
+                  <img src="producto2.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: greenyellow;">Tacos Vapor 15 Club Fg/Mg De Hombre.</h5>
+                    <p class="card-text" style="color: greenyellow;">$150</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <div class="card">
+                  <img src="producto3.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: greenyellow;">Balón Neo Futbol Sala Umbro</h5>
+                    <p class="card-text" style="color: greenyellow;">$120</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-12 col-lg-4">
+                <div class="card">
+                  <img src="producto4.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: greenyellow;">Mochila Everlast Champions Black.</h5>
+                    <p class="card-text" style="color: greenyellow;">$130</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <div class="card">
+                  <img src="producto5.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: greenyellow;">Set De Ejercicio Golds Gyms.</h5>
+                    <p class="card-text" style="color: greenyellow;">$140</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <div class="card">
+                  <img src="producto6.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: greenyellow;">Gorra Deportiva Negra.</h5>
+                    <p class="card-text" style="color: greenyellow;">$150</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-light py-5" style="background-color: #fff;">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-5" style="background-color: #f5f5f5;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>MultiSports</h5>
+          <p>Tu tienda especializada en equipamiento deportivo.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <p>&copy; 2024 MultiSports. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
